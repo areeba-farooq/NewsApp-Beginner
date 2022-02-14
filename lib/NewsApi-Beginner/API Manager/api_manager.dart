@@ -3,8 +3,8 @@ import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
-import 'package:news_api_app/Constants/constants.dart';
-import 'package:news_api_app/Models/news_model.dart';
+import 'package:news_api_app/NewsApi-Beginner/Constants/constants.dart';
+import 'package:news_api_app/NewsApi-Beginner/Models/news_model.dart';
 // ignore: camel_case_types
 class API_Manager{
 

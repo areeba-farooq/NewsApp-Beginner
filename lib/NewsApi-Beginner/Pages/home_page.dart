@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:news_api_app/API%20Manager/api_manager.dart';
-import 'package:news_api_app/Models/news_model.dart';
+import 'package:news_api_app/NewsApi-Beginner/API%20Manager/api_manager.dart';
+import 'package:news_api_app/NewsApi-Beginner/Models/news_model.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -48,7 +48,7 @@ class _HomePageState extends State<HomePage> {
                 return Column(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 15.0),
+                      padding: const EdgeInsets.symmetric(vertical: 10.0),
                       child: Card(
                         color: Colors.white70,
                         clipBehavior: Clip.antiAlias,
@@ -59,7 +59,7 @@ class _HomePageState extends State<HomePage> {
                             aspectRatio: 2,
                             child: Image.network(
                               articles!.urlToImage,
-                              fit: BoxFit.cover,
+
                             )),
                       ),
                     ),
@@ -74,6 +74,7 @@ class _HomePageState extends State<HomePage> {
                       indent: 70,
                       endIndent: 70,
                       thickness: 3,
+
                     ),
                     const SizedBox(
                       height: 3,
@@ -98,3 +99,5 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
+
+
